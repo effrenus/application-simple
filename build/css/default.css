@@ -1,0 +1,63 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after { content: ''; content: none; }
+
+q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+html, body { min-height: 100%; background-color: #f7f7f7; }
+
+body { width: 480px; margin: auto; -webkit-perspective: 1000px; font-family: Tahoma, sans-serif; color: #3f3f3f; }
+
+.js select.fancy { position: absolute; top: 0; left: -1000em; }
+
+.btn { padding: 8px 0; text-align: center; border-radius: 5px; cursor: pointer; }
+
+.application-header { margin-bottom: 1.7em; padding-top: 5.8em; text-align: center; }
+.application-header h1 { position: relative; margin-bottom: 2em; font-size: 1.6em; font-weight: normal; }
+.application-header h1:after { content: ""; position: absolute; bottom: -20px; left: 50%; width: 46px; height: 3px; margin-left: -23px; background-color: #8cc555; font-size: 0; }
+.application-header p { font-size: 0.9em; line-height: 1.7; }
+
+.application-form { margin-bottom: 2em; padding: 3.25em 0; box-shadow: 0 3px 3px #ccc; border-radius: 5px; background-color: #FFF; text-align: center; }
+.application-form form { width: 290px; margin: auto; }
+.application-form .btn-submit { width: 100%; padding: 15px 0; background-color: #8cc555; border: 1px solid #7AAF47; color: #FFF; text-shadow: 1px 1px #7AAF47; font-size: 0.9em; }
+.application-form .btn-submit:hover { background-color: #669934; }
+.application-form .btn-submit:active { background-color: #4d7327; }
+
+@-webkit-keyframes nonvalid { 33% { -webkit-transform: rotateY(45deg); }
+  66% { -webkit-transform: rotateY(-45deg); }
+  100% { -webkit-transform: rotateY(0); } }
+.application-fields li { margin-bottom: 2.7em; }
+.application-fields label { display: block; margin-bottom: 1em; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+.application-fields select, .application-fields input, .application-fields textarea { padding: 9.5px 0; width: 100%; border: 1px solid #f1f1f1; border-radius: 3px; background-color: #FFF; text-align: center; box-shadow: 0 0 2px #eee; resize: none; }
+.application-fields textarea { height: 15px; transition: height 1s; }
+.application-fields textarea:focus, .application-fields textarea.is-stretched { height: 70px; }
+
+::-webkit-input-placeholder { text-align: center; }
+
+:-moz-placeholder { /* Firefox 18- */ text-align: center; }
+
+::-moz-placeholder { /* Firefox 19+ */ text-align: center; }
+
+:-ms-input-placeholder { text-align: center; }
+
+.selectbox { position: relative; margin-bottom: 1em; border: 1px solid #eee; border-radius: 3px; box-shadow: 0 0 2px #eee; font-size: 0.8em; }
+.selectbox:after { position: absolute; right: 8px; top: 45%; content: ""; width: 0px; height: 0px; border-style: solid; font-size: 0; border-width: 6px 5px 0 5px; border-color: #aaaaaa transparent transparent transparent; }
+
+.selectbox-text { height: 25px; padding: 5px 0; line-height: 25px; }
+
+.selectbox-list { display: none; position: absolute; width: 100%; left: 0; top: 100%; margin-top: 10px; padding: 10px 0; background-color: #FFF; box-shadow: 0 0 3px #CCC; border-radius: 2px; z-index: 2; }
+.selectbox-list .option { padding: 7px 20px; cursor: pointer; text-align: left; }
+.selectbox-list .option:hover { background-color: #8cc555; color: #FFF; }

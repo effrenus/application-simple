@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подача заявки</title>
+    <link rel="stylesheet" type="text/css" href="./build/css/default.css">
+    <script type="text/javascript">document.documentElement.className="js";</script>
+</head>
+<body>
+
+<header class="application-header">
+    <h1>Заполните анкету</h1>
+    <p>Другая аналогичная по масштабу тема – это истерика вокруг закрытия GPS на территории России.</p>
+</header>
+
+<section class="application-form">
+    <form action="." method="POST">
+        <ul class="application-fields">
+            <li>
+                <label class="">Электронная почта</label>
+                <input name="email" type="email" placeholder="mail@mail.com" >
+            </li>
+            <li>
+                <label class="">Модель iPhone</label>
+                <select data-placeholder="Выберите из списка" name="model" class="fancy" >
+                    <option></option>
+                    <option value="3">iPhone 3</option>
+                    <option value="4">iPhone 3s</option>
+                    <option value="5">iPhone 4</option>
+                    <option value="6">iPhone 4s</option>
+                    <option value="7">iPhone 5</option>
+                    <option value="8">iPhone 5s</option>
+                </select>
+            </li>
+            <li>
+                <label class="">Версия ПО</label>
+                <select data-placeholder="Выберите из списка" name="version" class="fancy" >
+                    <option></option>
+                    <option value="5">iOS 5</option>
+                    <option value="6">iOS 6</option>
+                    <option value="7">iOS 7</option>
+                </select>
+            </li>
+            <li>
+                <label class="">Комментарий</label>
+                <textarea name="comment" placeholder="Не обязательно"></textarea>
+            </li>
+        </ul>
+
+        <button class="btn btn-submit" type="submit">Подать заявку</button>
+    </form>
+</section>
+
+<script type="text/javascript" src="./build/js/main.js"></script>
+
+</body>
+</html>
