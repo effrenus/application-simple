@@ -49,7 +49,7 @@ p { margin-bottom: 1em; }
 .application-fields li { margin-bottom: 2.7em; }
 .application-fields label { display: block; margin-bottom: 1em; font-size: 10px; font-weight: bold; text-transform: uppercase; }
 .application-fields select, .application-fields input, .application-fields textarea { padding: 9.5px 0; width: 100%; border: 1px solid #f1f1f1; border-radius: 3px; background-color: #FFF; text-align: center; box-shadow: 0 0 2px #eee; resize: none; }
-.application-fields textarea { height: 15px; transition: height 1s; }
+.application-fields textarea { height: 15px; -webkit-transition: height 1s; transition: height 1s; }
 .application-fields textarea:focus, .application-fields textarea.is-stretched { height: 70px; }
 
 ::-webkit-input-placeholder { text-align: center; }

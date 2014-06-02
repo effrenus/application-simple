@@ -7,6 +7,11 @@ module.exports = {
                 .on('blur', 'textarea', function(){
                     $(this)[((this.value != '') ? 'addClass' : 'removeClass')]('is-stretched');
                 });
+        this.$form.parent().on('click', '.fill-form', $.proxy(this.viewForm, this));
+    },
+    viewForm: function(){
+        this.clean();
+        this.$form.parent().removeClass('is-sended');
     },
     onSubmit: function(e){
         e.preventDefault();
@@ -23,10 +28,10 @@ module.exports = {
         this.$form[0].reset();
         this.$form.find('.selectbox').each(function(){
             var selectbox = $(this).data("instance");
-            selectbox.clear();
+            selectbox.setDefault();
         });
     },
     onSuccess: function(){
-        
+        this.$form.parent().addClass('is-sended');
     }
 }

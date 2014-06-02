@@ -10,7 +10,10 @@ var SelectBox = React.createClass({
         $(document).click(this.closePopup);
     },
     componentDidMount: function(){
-        $(this.getDOMNode()).data("instance", this);
+        $(this.getDOMNode())
+                    .data("instance", this)
+                    .find('.selectbox-text').text(this.props.defaultText);
+        
     },
     closePopup: function(){
         if(this.state.isOpened){
@@ -23,8 +26,9 @@ var SelectBox = React.createClass({
         $(this.getDOMNode()).find('.selectbox-list').show();
         return false;
     },
-    clear: function(){
-
+    setDefault: function(){
+        this.props.elm.selectedIndex = -1;
+        $(this.getDOMNode()).find('.selectbox-text').text(this.props.defaultText);
     },
     onItemSelect: function(item){
         var parent = $(this.getDOMNode());
@@ -68,7 +72,7 @@ $('select.fancy').each(function(){
         container = $(this).before('<div class="container"/>').prev().get(0);
     
     React.renderComponent(
-        <SelectBox elm={s} data={ar} />,
+        <SelectBox defaultText={$(s).attr('data-placeholder') || ''} elm={s} data={ar} />,
         container
     );
 });
